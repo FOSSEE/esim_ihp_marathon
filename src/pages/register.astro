@@ -1,0 +1,131 @@
+---
+import Layout from "../layouts/layout.astro";
+
+const formLink = "https://forms.gle/your-google-form-link"; // replace with real Google Form
+---
+
+<Layout title="Register - eSim & IHP Marathon">
+  <div class="bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 min-h-screen">
+    <div class="container mx-auto px-4 py-12 max-w-5xl">
+      <!-- Main Header -->
+      <div class="text-center mb-12 fade-in">
+        <h1 class="section-header text-5xl md:text-6xl font-bold mb-6">Register Now</h1>
+        <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+        <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+          Join the eSim & IHP Marathon - Open to participants from India and abroad
+        </p>
+      </div>
+
+      <!-- Registration Overview -->
+      <div class="text-center mb-16 fade-in">
+        <div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl p-8 text-white shadow-2xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+              <span class="text-4xl">📝</span>
+            </div>
+          </div>
+          <h2 class="text-4xl font-bold mb-4">Registration Information</h2>
+          <p class="text-green-100 text-lg max-w-2xl mx-auto mb-8">
+            Interested people from <strong>India and abroad</strong> may register using our Google form
+          </p>
+
+          <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLScYKwSDwM6VkcZKAwGjZksGEJR7Ws7TAJJjj8ky6iSTCpWCnw/closedform" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="register-btn text-white px-12 py-4 rounded-2xl font-bold text-xl hover:scale-105 transition-all duration-300 inline-block"
+        >
+          📋 Register via Google Form
+        </a>
+                </div>
+      </div>
+
+      <!-- No Restrictions Section -->
+      <div class="mb-16 fade-in">
+        <div class="bg-white rounded-2xl p-8 shadow-xl border-l-8 border-yellow-400">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
+              <span class="text-3xl">🚫</span>
+            </div>
+            <h3 class="text-3xl font-bold text-gray-800">No Restrictions</h3>
+          </div>
+          <p class="text-gray-700 text-xl leading-relaxed">
+            There is <strong>no restriction or age limit</strong> of any kind in appearing for the Marathon.
+          </p>
+        </div>
+      </div>
+
+      <!-- Who Can Register Section -->
+      <div class="fade-in">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">Who Can Register?</h2>
+          <p class="text-gray-600 text-lg">The Marathon is open to everyone! Here are some examples:</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            { icon: "🎓", title: "Students & Freshers", desc: "Students and freshers from all colleges are welcome" },
+            { icon: "💼", title: "Employed Professionals", desc: "Professionals working in various organizations" },
+            { icon: "👨‍🏫", title: "Teachers & Professors", desc: "Teachers and professors from colleges" },
+            { icon: "🚀", title: "Startup Professionals", desc: "People working in startups and ventures" },
+            { icon: "🔬", title: "Research Organizations", desc: "Professionals from R&D institutions" },
+            { icon: "🌟", title: "And Many More!", desc: "Anyone apart from above may also register" },
+          ].map(({ icon, title, desc }) => (
+            <div class="registration-card bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl">
+              <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span class="text-3xl">{icon}</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">{title}</h3>
+              <p class="text-gray-600 text-center leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="mt-16 fade-in">
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <h4 class="text-2xl font-bold text-gray-800 mb-6 text-center">Important Notes</h4>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex items-start"><span class="text-2xl mr-3 mt-1">✅</span>
+              <div><h5 class="font-bold text-gray-800 mb-2">Free Registration</h5><p class="text-gray-600">Registration is free</p></div>
+            </div>
+            <div class="flex items-start"><span class="text-2xl mr-3 mt-1">👤</span>
+              <div><h5 class="font-bold text-gray-800 mb-2">Individual Participation</h5><p class="text-gray-600">Open only to individuals</p></div>
+            </div>
+            <div class="flex items-start"><span class="text-2xl mr-3 mt-1">⚡</span>
+              <div><h5 class="font-bold text-gray-800 mb-2">Basic Electronics Knowledge</h5><p class="text-gray-600">Should know basic electronics</p></div>
+            </div>
+            <div class="flex items-start"><span class="text-2xl mr-3 mt-1">🌐</span>
+              <div><h5 class="font-bold text-gray-800 mb-2">Global Participation</h5><p class="text-gray-600">Open to India & abroad</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</Layout>
+
+<style>
+  .registration-card { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
+  .registration-card:hover { transform: translateY(-8px) scale(1.02); }
+  .icon-container { background: linear-gradient(135deg, #3b82f6, #8b5cf6); animation: float 3s ease-in-out infinite; }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+  .section-header { background: linear-gradient(135deg,#1e40af,#7c3aed); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .fade-in { opacity:0; transform:translateY(30px); transition:all 0.8s ease; }
+  .fade-in.visible { opacity:1; transform:translateY(0); }
+  .register-btn { background:linear-gradient(135deg,#10b981,#059669); transition:all 0.3s ease; box-shadow:0 10px 25px rgba(16,185,129,0.3); }
+  .register-btn:hover { background:linear-gradient(135deg,#059669,#047857); transform:translateY(-2px); box-shadow:0 15px 35px rgba(16,185,129,0.4); }
+</style>
+
+<script>
+  // Intersection Observer for fade-in animations
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  });
+</script>

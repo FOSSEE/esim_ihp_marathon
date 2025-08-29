@@ -1,11 +1,9 @@
 [
-    { "label": "Home", "href": "/home" },
 
   { "label": "About", "href": "/about" },
-  { "label": "Timeline", "href": "/timeline" },
 { "label": "Probelm Statement", "href": "/problemstatement"},
   { "label": "Resources", "href": "/resources" },
-  { "label": "Rules", "href": "/rules" },
+  { "label": "Register", "href": "/register" },
 
   { "label": "Partners", "href": "/partners" },
   { "label": "Contact", "href": "/contact" }

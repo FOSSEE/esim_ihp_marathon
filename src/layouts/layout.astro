@@ -2,8 +2,13 @@
 import navLinks from "./nav-links.json";
 import "../styles/global.css";
 import esim from "../images/webtop.png";
----
+import spoken from "../images/WhatsApp Image 2025-08-29 at 3.24.22 PM.jpeg";
+import fossee from "../images/WhatsApp Image 2025-08-29 at 3.24.22 PM(2).jpeg";
 
+import iitb from "../images/WhatsApp Image 2025-08-29 at 3.24.22 PM(1).jpeg";
+
+
+---
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,11 +21,11 @@ import esim from "../images/webtop.png";
     <nav class="fixed top-0 left-0 w-full bg-indigo-600 shadow-md z-50">
       <div class="max-w-7xl mx-auto px-6">
         <ul class="flex justify-center items-center gap-10 py-4">
-          <li><a href="/home" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Home</a></li>
+          <!-- <li><a href="/home" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Home</a></li> -->
           <li><a href="/about" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">About</a></li>
-          <li><a href="/timeline" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Timeline</a></li>
           <li><a href="/problemstatement" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Problem Statement</a></li>
           <li><a href="/resources" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Resources</a></li>
+          <li><a href="/register" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Register</a></li>
 
           <li><a href="/partner" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Partner</a></li>
           <li><a href="/contact" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Contact</a></li>
@@ -33,18 +38,658 @@ import esim from "../images/webtop.png";
 
     <!-- Hero Section -->
     <section class="flex justify-center bg-white">
-      <a href="https://www.esim.fossee.in/" target="_blank">
+      <a href="https://esim.fossee.in/" target="_blank">
         <img 
           src={esim.src} 
           alt="eSim" 
           decoding="async" 
-          class="max-w-[1000px] mx-auto rounded-md shadow-md"
+          class="max-w-[1700px] mx-auto rounded-md shadow-md"
         />
       </a>
     </section>
 
     <main class="max-w-6xl mx-auto px-4 py-8">
       <slot />
-    </main>
-  </body>
-</html>
+    </main> 
+
+
+       <br /><br /  >
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Why eSim & IHP?</title>
+           <script src="https://cdn.tailwindcss.com"></script>
+           <style>
+               .benefit-card {
+                   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+               }
+               
+               .benefit-card:hover {
+                   transform: translateY(-8px) scale(1.02);
+               }
+               
+               .icon-container {
+                   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+                   animation: float 3s ease-in-out infinite;
+               }
+               
+               @keyframes float {
+                   0%, 100% { transform: translateY(0px); }
+                   50% { transform: translateY(-10px); }
+               }
+               
+               .section-header {
+                   background: linear-gradient(135deg, #1e40af, #7c3aed);
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
+                   background-clip: text;
+               }
+               
+               .fade-in {
+                   opacity: 0;
+                   transform: translateY(30px);
+                   transition: all 0.8s ease;
+               }
+               
+               .fade-in.visible {
+                   opacity: 1;
+                   transform: translateY(0);
+               }
+               
+               .highlight-text {
+                   background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%);
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
+                   background-clip: text;
+               }
+           </style>
+       </head>
+       <body class="bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 min-h-screen">
+           <div class="container mx-auto px-4 py-16 max-w-7xl">
+               <!-- Main Header -->
+               <div class="text-center mb-16 fade-in">
+                   <h1 class="section-header text-5xl md:text-6xl font-bold mb-6">
+                       Why Choose Our Platform?
+                   </h1>
+                   <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+                   <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+                       Discover the power of open-source EDA tools and cutting-edge semiconductor technology
+                   </p>
+               </div>
+       
+               <!-- eSim Section -->
+               <div class="mb-20 fade-in">
+                   <div class="text-center mb-12">
+                       <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                           Why <span class="highlight-text">eSim</span>?
+                       </h2>
+                       <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                           An open-source EDA tool that empowers engineers, students, and entrepreneurs worldwide
+                       </p>
+                   </div>
+       
+                   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                       <!-- Benefit 1 -->
+                       <div class="benefit-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+                           <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                               <span class="text-3xl">🆓</span>
+                           </div>
+                           <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Open Source & Free</h3>
+                           <p class="text-gray-600 text-center leading-relaxed">
+                               Use it free of cost with no license restrictions. Perfect for students, researchers, and professionals.
+                           </p>
+                       </div>
+       
+                       <!-- Benefit 2 -->
+                       <div class="benefit-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+                           <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                               <span class="text-3xl">📚</span>
+                           </div>
+                           <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Excellent Learning Resources</h3>
+                           <p class="text-gray-600 text-center leading-relaxed">
+                               Comprehensive learning materials including Spoken Tutorials to help you master the tool quickly.
+                           </p>
+                       </div>
+       
+                       <!-- Benefit 3 -->
+                       <div class="benefit-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+                           <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                               <span class="text-3xl">💼</span>
+                           </div>
+                           <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Commercial Use Ready</h3>
+                           <p class="text-gray-600 text-center leading-relaxed">
+                               Perfect for consulting jobs, company work, and commercial applications without licensing concerns.
+                           </p>
+                       </div>
+       
+                       <!-- Benefit 4 -->
+                       <div class="benefit-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+                           <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                               <span class="text-3xl">🚀</span>
+                           </div>
+                           <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Entrepreneur Friendly</h3>
+                           <p class="text-gray-600 text-center leading-relaxed">
+                               Ideal for entrepreneurs and SMEs looking to develop innovative solutions without high software costs.
+                           </p>
+                       </div>
+       
+                       <!-- Benefit 5 -->
+                       <div class="benefit-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl md:col-span-2 lg:col-span-1">
+                           <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                               <span class="text-3xl">🔄</span>
+                           </div>
+                           <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Easy Migration</h3>
+                           <p class="text-gray-600 text-center leading-relaxed">
+                               Seamlessly switch to commercial software when needed, ensuring flexibility in your workflow.
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <!-- IHP Section -->
+               <div class="fade-in">
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-white">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold mb-4">
+                            Why <span class="text-yellow-300">IHP</span>?
+                        </h2>
+                        <p class="text-blue-100 text-lg max-w-3xl mx-auto">
+                            Leading the revolution in open-source semiconductor technology
+                        </p>
+                    </div>
+    
+                    <!-- Content Blocks in Horizontal Layout -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-2xl">🏛️</span>
+                                </div>
+                                <h3 class="text-2xl font-bold">Leading Research Institute</h3>
+                            </div>
+                            <p class="text-blue-100 leading-relaxed">
+                                IHP – Innovations for High Performance Microelectronics is a renowned German research institute, 
+                                specializing in advanced BiCMOS semiconductor technologies for high-frequency and mixed-signal applications.
+                            </p>
+                        </div>
+    
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-2xl">🎯</span>
+                                </div>
+                                <h3 class="text-2xl font-bold">Historic Open Source Release</h3>
+                            </div>
+                            <p class="text-blue-100 leading-relaxed">
+                                In a landmark move, IHP released the <strong class="text-yellow-300">SG13G2 PDK</strong> as open-source—
+                                the first industrial-grade PDK available freely to academia, enthusiasts, and researchers worldwide.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- Visual Element -->
+                    <div class="text-center">
+                        <div class="relative">
+                            <div class="w-64 h-64 mx-auto bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl">
+                                <div class="text-center">
+                                    <div class="text-6xl font-bold text-indigo-600 mb-2">IHP</div>
+                                    <div class="text-sm text-indigo-600 font-semibold">SG13G2 PDK</div>
+                                    <div class="text-xs text-indigo-600">Open Source</div>
+                                </div>
+                            </div>
+                            <!-- <div class="absolute -top-4 -right-4 w-16 h-16 bg-green-400 rounded-full flex items-center justify-center animate-bounce">
+                                <span class="text-2xl">✅</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+        <main class="bg-white flex justify-center font-[Montserrat] min-h-screen py-12 px-6">
+          <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-10">
+            
+            <!-- Title -->
+            <h1 class="text-4xl font-bold text-center text-blue-700 mb-8">
+              Design, Simulate, Showcase - <br />Unlock Open-Source VLSI Design using eSim + IHP SG13G2 PDK!!!
+            </h1>
+            <br /><br />
+      
+            <main>  <h2 class="text-2xl font-bold text-grey-800 mb-4 flex justify-center">Background and Motivation</h2>
+
+              <p class="text-gray-800 mb-4">
+                The design and verification of integrated circuits (ICs) traditionally rely on expensive proprietary tools and closed foundry ecosystems. 
+                This creates a barrier for students, researchers, and startups, particularly in developing regions, who wish to explore VLSI design.
+              </p>
+            
+              <p class="text-gray-800 mb-4">
+                To address this challenge, <span class="font-bold">FOSSEE, IIT Bombay</span>, has developed 
+                <span class="font-bold">eSim</span>, an open-source EDA tool that enables schematic design, simulation, and PCB development. 
+                eSim is intended to democratize access to electronics design by offering a free and customizable alternative to commercial EDA tools.
+              </p>
+            
+              <p class="text-gray-800 mb-4">
+                In parallel, <span class="font-bold">IHP Microelectronics, Germany</span>, has taken a pioneering step by releasing the 
+                <span class="font-bold">SG13G2 PDK</span> under an open-source license. 
+                This BiCMOS technology enables high-frequency analog, RF, and digital circuit design at the 130 nm node—something previously accessible only through expensive, closed-access channels.
+              </p>
+            
+              <p class="text-gray-800 mb-4">
+                By combining eSim with the IHP SG13G2 PDK, this marathon creates a rare opportunity for students, faculty, and enthusiasts to:
+              </p>
+            
+              <ul class="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                <li>Gain hands-on experience with a real-world PDK</li>
+                <li>Design and simulate analog, digital, and mixed-signal circuits using only open tools</li>
+                <li>Develop practical skills that align with industry and research requirements</li>
+                <li>Contribute to the growing global movement for open-source silicon</li>
+              </ul>
+            
+              <p class="text-gray-800">
+                The marathon fosters capacity-building in VLSI using open infrastructure, in line with national and global educational goals.
+              </p>
+            </main>
+            <br /><br />
+            <!-- What is eSim Marathon -->
+            <section>
+              <h2 class="text-2xl text-center font-semibold text-gray-800 mb-4">
+                What is the eSim Marathon -<br /> Circuit Design & Simulation with IHP SG13G2?
+              </h2>
+              <br />
+              <p class="text-xl md:text-xl text-gray-700 leading-relaxed mb-6">
+                The eSim Marathon - Circuit Design & Simulation with IHP SG13G2 is a nationwide circuit design competition where participants use 
+                <strong>eSim</strong>, <br />an open-source EDA tool developed by FOSSEE, IIT Bombay, to design and simulate circuits using the 
+                <strong>IHP SG13G2 PDK</strong> - a 130 nm open-source BiCMOS technology from IHP Microelectronics, Germany.
+              </p>
+      
+      
+              <br /><br />
+              <h3 class="text-xl text-gray-800 mb-2">Key Highlights:</h3>
+              <br />
+              <ul class="  font-size: 17pt  list-disc list-inside text-gray-700 leading-relaxed space-y-2 mb-6">
+                <li><strong>Tool Used:</strong> eSim - a free and open-source alternative to commercial circuit design tools like OrCAD.</li>
+                <li><strong>PDK Used:</strong> IHP SG13G2 - enables design of analog, digital, and RF circuits at 130 nm.</li>
+                <li><strong>Objective:</strong> Design, simulate, and submit functional analog/digital/mixed-signal circuits.</li>
+                <li><strong>Eligibility:</strong> Open to individuals - students, hobbyists, and early-career professionals.</li>
+                <li><strong>Learning Outcomes:</strong> Participants gain hands-on VLSI design experience using a real foundry PDK, 
+                    develop schematics, run simulations, and build documentation - entirely with open tools.</li>
+              </ul>
+      
+              <p class= font-size: 17pt "text-gray-700 leading-relaxed">
+                This marathon is designed to bridge the gap between theoretical circuit design education and real-world chip design using open-source flows.
+              </p>
+            </section>
+          </div>
+        </main>
+
+        <main class="min-h-screen bg-[#ffff] font-[Montserrat], sans-serif py-12 px-6">
+          <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-8">
+            <h2 class="text-xl font-bold text-center text-red-700 mb-8">
+           Timeline
+            </h2>
+      
+            <div class="overflow-x-auto">
+              <table class="w-full max-auto border-collapse border border-gray-300 text-sm md:text-base">
+                <thead class="bg-red-700 text-white bg-[#C9C0BB]">
+                  <tr>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Date</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Activity</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">1 Sept. - 15 Sept. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Registration for the Marathon</td>
+                    <td class="border border-gray-300 px-4 py-3">Complete the participation form</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">16 Sept. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Marathon Inauguration Webinar</td>
+                    <td class="border border-gray-300 px-4 py-3">FOSSEE Team will introduce through eSim, IHP and Marathon process</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">16 Sept. - 23 Sept. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Literature Survey</td>
+                    <td class="border border-gray-300 px-4 py-3">Participants need to research the topic available in papers/journals on the web</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">23 Sept. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Report Submission</td>
+                    <td class="border border-gray-300 px-4 py-3">Submit one-page research conclusion and circuit implementation plan</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">23 Sept. - 5 Oct. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Implementation</td>
+                    <td class="border border-gray-300 px-4 py-3">Design, characterise and simulate using eSim platform</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">5 Oct. - 8 Oct. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Report Submission & Documentation</td>
+                    <td class="border border-gray-300 px-4 py-3">Upload reference and actual circuit/waveform using eSim</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-3">25 Oct. 2025</td>
+                    <td class="border border-gray-300 px-4 py-3">Result Declaration (Provisional)</td>
+                    <td class="border border-gray-300 px-4 py-3">Announcement of provisional results</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      <br /><br />
+        <main>
+<!-- Guidelines Section -->
+<div class="mt-8">
+  <h4 class="text-2xl text-center font-bold text-gray-800 mb-6">Guidelines</h4>
+  
+  <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="bg-blue-50 rounded-xl p-6">
+          <div class="flex items-start mb-3">
+              <span class="text-2xl mr-3">🎓</span>
+              <div>
+                  <h5 class="font-bold text-blue-800 mb-2">Start Learning Now</h5>
+                  <p class="text-blue-700">
+                      Start learning eSim right away using the <strong>Spoken Tutorials</strong>, available here
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="bg-green-50 rounded-xl p-6">
+          <div class="flex items-start mb-3">
+              <span class="text-2xl mr-3">🎯</span>
+              <div>
+                  <h5 class="font-bold text-green-800 mb-2">Quality Over Quantity</h5>
+                  <p class="text-green-700">
+                      Submitting <strong>one good entry</strong> has a higher chance of getting shortlisted, compared to submitting multiple entries.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Benefits Section -->
+  <h4 class="text-2xl text-center font-bold text-gray-800 mb-6">Benefits</h4>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-purple-50 rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">🏆</div>
+          <h5 class="font-bold text-purple-800 mb-2">e-Certificate</h5>
+          <p class="text-purple-700 text-sm">On successful completion</p>
+      </div>
+
+      <div class="bg-orange-50 rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">🌟</div>
+          <h5 class="font-bold text-orange-800 mb-2">Recognition</h5>
+          <p class="text-orange-700 text-sm">On the FOSSEE Website</p>
+      </div>
+
+      <div class="bg-teal-50 rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">💼</div>
+          <h5 class="font-bold text-teal-800 mb-2">Career Boost</h5>
+          <p class="text-teal-700 text-sm">Improved internship/job opportunities</p>
+      </div>
+
+      <div class="bg-indigo-50 rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">📚</div>
+          <h5 class="font-bold text-indigo-800 mb-2">Deep Learning</h5>
+          <p class="text-indigo-700 text-sm">Learn technologies in detail</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+        <!-- Who Can Participate Section - Compact Version -->
+        <div class="text-center mt-16 fade-in">
+          <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl p-6 text-white shadow-xl max-w-3xl mx-auto">
+              <h3 class="text-2xl font-bold mb-4">Who Can Participate?</h3>
+              
+              <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                      <div class="flex items-center mb-3">
+                          <span class="text-2xl mr-3">🆓</span>
+                          <h4 class="text-lg font-bold">Free Registration</h4>
+                      </div>
+                      <p class="text-emerald-100 text-sm">
+                          Registration is <strong>free of cost</strong> and is open ONLY to <strong>individuals</strong>, not to teams or groups.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                      <div class="flex items-center mb-3">
+                          <span class="text-2xl mr-3">⚡</span>
+                          <h4 class="text-lg font-bold">Prerequisites</h4>
+                      </div>
+                      <p class="text-emerald-100 text-sm">
+                          The participant should have a <strong>good knowledge of basic electronics</strong>.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="mt-4 bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                  <div class="flex items-center justify-center mb-2">
+                      <span class="text-2xl mr-2">👤</span>
+                      <h4 class="text-lg font-bold">Individual Participation Only</h4>
+                  </div>
+                  <p class="text-emerald-100 text-sm">
+                      This is an individual challenge designed to showcase your personal skills and knowledge in electronics and EDA tools.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+          <!-- System Requirements -->
+          <div class="text-center mt-16 fade-in">
+            <div class="bg-white rounded-2xl p-8 shadow-xl">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">System Requirements to run eSim</h3>
+                
+                <div class="bg-blue-50 rounded-xl p-6 mb-8">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-2xl">☁️</span>
+                        </div>
+                        <p class="text-blue-800 text-lg font-semibold">
+                            All participants will be provided remote login to the cloud.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-left max-w-3xl mx-auto">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4 text-center">
+                        For Local Installation (Recommended Configuration):
+                    </h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="text-2xl mr-3">💻</span>
+                                <h5 class="font-bold text-gray-800">Operating System</h5>
+                            </div>
+                            <p class="text-gray-600">64-bit Ubuntu 18.04/20.04 LTS</p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="text-2xl mr-3">💾</span>
+                                <h5 class="font-bold text-gray-800">Storage & Memory</h5>
+                            </div>
+                            <p class="text-gray-600">Minimum 20GB free disk space<br>4 GB RAM</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mt-6 rounded-r-xl">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3">📦</span>
+                            <div>
+                                <p class="font-semibold text-yellow-800 mb-1">Alternative Option:</p>
+                                <p class="text-yellow-700">
+                                    <strong>Virtual Box</strong> may be used to install Ubuntu OS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Download eSim
+                    </button>
+                    <button class="bg-gradient-to-r from-green-500 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-green-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Access Cloud Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Partners and Organisers Section -->
+<div class="text-center mt-16 fade-in">
+  <div class="bg-white rounded-2xl p-8 shadow-xl">
+    <h3 class="text-3xl font-bold text-gray-800 mb-8">Partners and Organisers</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- IITB -->
+      <div class="flex flex-col items-center">
+        <img src={iitb.src} alt="IIT Bombay" class="w-24 h-24 object-contain mb-4 rounded-lg shadow-md" />
+        <h4 class="text-xl font-bold text-gray-800">IITB</h4>
+        <p class="text-gray-600 text-sm text-center">Indian Institute of Technology Bombay</p>
+      </div>
+
+      <!-- FOSSEE -->
+      <div class="flex flex-col items-center">
+        <img src={fossee.src} alt="FOSSEE" class="w-24 h-24 object-contain mb-4 rounded-lg shadow-md" />
+        <h4 class="text-xl font-bold text-gray-800">FOSSEE</h4>
+        <p class="text-gray-600 text-sm text-center">Free and Open Source Software for Education</p>
+      </div>
+
+      <!-- IHP -->
+      <div class="flex flex-col items-center">
+        <div class="w-24 h-24 flex items-center justify-center bg-purple-100 rounded-lg mb-4 shadow-md">
+          <span class="text-2xl font-bold text-purple-600">IHP</span>
+        </div>
+        <h4 class="text-xl font-bold text-gray-800">IHP</h4>
+        <p class="text-gray-600 text-sm text-center">Innovations for High Performance Microelectronics</p>
+      </div>
+
+      <!-- Spoken Tutorial -->
+      <div class="flex flex-col items-center">
+        <img src={spoken.src} alt="Spoken Tutorial" class="w-24 h-24 object-contain mb-4 rounded-lg shadow-md" />
+        <h4 class="text-xl font-bold text-gray-800">Spoken Tutorial</h4>
+        <p class="text-gray-600 text-sm text-center">Audio-Video Learning Platform</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <!-- Contact Us Section -->
+          <div class="text-center mt-16 fade-in">
+              <div class="bg-gradient-to-r from-slate-700 to-gray-800 rounded-2xl p-8 text-white shadow-xl">
+                  <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+                  
+                  <div class="flex items-center justify-center mb-6">
+                      <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                          <span class="text-3xl">📧</span>
+                      </div>
+                      <div class="text-left">
+                          <p class="text-gray-300 text-lg mb-2">For any queries, please email:</p>
+                          <p class="text-2xl font-bold text-blue-300">contact-esim[at]fossee[dot]in</p>
+                      </div>
+                  </div>
+                  
+                  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
+                      <p class="text-gray-200">
+                          We're here to help! Don't hesitate to reach out if you have any questions about the marathon, 
+                          registration process, or technical requirements.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+</main>
+
+      
+        <script>
+            // Intersection Observer for fade-in animations
+            document.addEventListener('DOMContentLoaded', function() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+    
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, observerOptions);
+    
+                // Observe all fade-in elements
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    observer.observe(el);
+                });
+    
+                // Add click handlers for buttons
+                const buttons = document.querySelectorAll('button');
+                buttons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Create ripple effect
+                        const ripple = document.createElement('span');
+                        ripple.className = 'absolute inset-0 rounded-lg bg-white/20 transform scale-0 animate-ping';
+                        this.style.position = 'relative';
+                        this.appendChild(ripple);
+                        
+                        setTimeout(() => {
+                            ripple.remove();
+                        }, 600);
+                    });
+                });
+            });
+               // Intersection Observer for fade-in animations
+               document.addEventListener('DOMContentLoaded', function() {
+                   const observerOptions = {
+                       threshold: 0.1,
+                       rootMargin: '0px 0px -50px 0px'
+                   };
+       
+                   const observer = new IntersectionObserver((entries) => {
+                       entries.forEach(entry => {
+                           if (entry.isIntersecting) {
+                               entry.target.classList.add('visible');
+                           }
+                       });
+                   }, observerOptions);
+       
+                   // Observe all fade-in elements
+                   document.querySelectorAll('.fade-in').forEach(el => {
+                       observer.observe(el);
+                   });
+       
+                   // Add click handlers for buttons
+                   const buttons = document.querySelectorAll('button');
+                   buttons.forEach(button => {
+                       button.addEventListener('click', function() {
+                           // Create ripple effect
+                           const ripple = document.createElement('span');
+                           ripple.className = 'absolute inset-0 rounded-lg bg-white/20 transform scale-0 animate-ping';
+                           this.style.position = 'relative';
+                           this.appendChild(ripple);
+                           
+                           setTimeout(() => {
+                               ripple.remove();
+                           }, 600);
+                       });
+                   });
+               });
+           </script>
+        </body> 
+       </html>
+       

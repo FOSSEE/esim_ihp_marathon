@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<Layout>
+  <section class="max-w-5xl mx-auto px-4 py-12 font-[Montserrat]">
+    
+    <!-- Problem Statement -->
+    <div class="mb-10">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Problem Statement</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        The objective of the <strong>eSim Marathon</strong> is to design and simulate functional electronic circuits using the <strong>eSim</strong> tool and the <strong>IHP SG13G2</strong> open-source PDK. Participants must choose one domain—analog, digital, or mixed-signal—and create a schematic-level design that works reliably with simulation outputs.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">Each participant is expected to:</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Understand and utilize the components provided in the SG13G2 PDK</li>
+        <li>Design a non-trivial circuit using eSim’s schematic interface</li>
+        <li>Perform a simulation using Ngspice integrated within eSim</li>
+        <li>Submit all design files, simulation results, and a short technical report</li>
+      </ul>
+    </div>
+
+    <!-- Example Circuits -->
+    <div class="mb-10">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Example Circuits</h2>
+
+      <!-- Analog Circuits -->
+      <div class="mb-6">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Analog Circuits</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Design an operational amplifier (e.g., two-stage OTA)</li>
+          <li>Implement a bandgap voltage reference</li>
+          <li>Create an analog filter (low-pass, high-pass, etc.)</li>
+        </ul>
+      </div>
+
+      <!-- Digital Track -->
+      <div class="mb-6">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Digital Track</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Build a 4-bit ripple carry adder or comparator</li>
+          <li>Design finite state machines (FSMs) like a traffic light controller</li>
+          <li>Implement a 3:8 decoder or simple arithmetic logic unit (ALU)</li>
+        </ul>
+      </div>
+
+      <!-- Mixed-Signal Track -->
+      <div class="mb-6">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Mixed-Signal Track</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Implement a sample-and-hold circuit</li>
+          <li>Design a 3-bit SAR-ADC or DAC</li>
+          <li>Combine digital FSM with an analog biasing stage</li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+</Layout>

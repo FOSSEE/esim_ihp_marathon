@@ -1,0 +1,50 @@
+---
+import navLinks from "./nav-links.json";
+import "../styles/global.css";
+import esim from "../images/webtop.png";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESIM Marathon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- ✅ Fixed Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-indigo-600 shadow-md z-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <ul class="flex justify-center items-center gap-10 py-4">
+          <li><a href="/home" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Home</a></li>
+          <li><a href="/about" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">About</a></li>
+          <li><a href="/timeline" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Timeline</a></li>
+          <li><a href="/problemstatement" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Problem Statement</a></li>
+          <li><a href="/resources" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Resources</a></li>
+
+          <li><a href="/partner" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Partner</a></li>
+          <li><a href="/contact" class="nav-item text-white font-semibold text-lg uppercase tracking-wide transition duration-300 hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ✅ Spacer so content doesn’t hide under fixed nav -->
+    <div class="pt-24"></div>
+
+    <!-- Hero Section -->
+    <section class="flex justify-center bg-white">
+      <a href="https://www.esim.fossee.in/" target="_blank">
+        <img 
+          src={esim.src} 
+          alt="eSim" 
+          decoding="async" 
+          class="max-w-[1000px] mx-auto rounded-md shadow-md"
+        />
+      </a>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+  </body>
+</html>

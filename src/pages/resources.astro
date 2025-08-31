@@ -3,42 +3,81 @@ import Layout from "../layouts/layout.astro";
 ---
 
 <Layout>
-  <main class="min-h-screen text-gray-800 flex justify-center font-[Montserrat]">
-    <section class="max-w-4xl mx-auto px-6 py-12">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Resources</h2>
+          <!-- Resources Section -->
+          <div class="text-center mt-16 fade-in">
+            <div class="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl p-8 text-white shadow-xl">
+                <h3 class="text-3xl font-bold mb-8">Resources</h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <!-- Main eSim Website -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="text-3xl">🌐</span>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Learn About eSim</h4>
+                        <p class="text-cyan-100 mb-4">Visit the official eSim website to discover features and capabilities</p>
+                        <a href="https://esim.fossee.in" target="_blank" class="inline-block bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-50 transition-colors duration-300">
+                            Visit eSim Website →
+                        </a>
+                    </div>
 
-      <ul class="space-y-4 list-disc list-inside text-lg leading-relaxed">
-        <li>
-          To know about <strong>eSim</strong>, visit: 
-          <a href="https://esim.fossee.in" target="_blank" class="text-blue-600 hover:underline">
-            https://esim.fossee.in
-          </a>
-        </li>
-        <li>
-          You can refer to this page to access the resources of eSim: 
-          <a href="https://esim.fossee.in/resources" target="_blank" class="text-blue-600 hover:underline">
-            https://esim.fossee.in/resources
-          </a>
-        </li>
-        <li>
-          To download eSim, visit: 
-          <a href="https://esim.fossee.in/downloads" target="_blank" class="text-blue-600 hover:underline">
-            https://esim.fossee.in/downloads
-          </a>
-        </li>
-        <li>
-          To learn eSim, use our spoken tutorials available at this link: 
-          <a href="http://spoken-tutorial.org/tutorial-search/?search_foss=eSim&search_language=English" 
-          target="_blank" class="text-blue-600 hover:underline">
-            Spoken Tutorials
-          </a>
-        </li>
- <li class="mt-4 text-gray-600 ">
-        Rest of the resources will be given in the process of Marathon.
-        
-      </li>
-    </ul>
+                    <!-- Resources Page -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="text-3xl">📚</span>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Access Resources</h4>
+                        <p class="text-cyan-100 mb-4">Comprehensive collection of documentation, guides, and materials</p>
+                        <a href="https://esim.fossee.in/resources" target="_blank" class="inline-block bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-50 transition-colors duration-300">
+                            Browse Resources →
+                        </a>
+                    </div>
 
-    </section>
-  </main>
+                    <!-- Download eSim -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="text-3xl">⬇️</span>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Download eSim</h4>
+                        <p class="text-cyan-100 mb-4">Get the latest version of eSim for your operating system</p>
+                        <a href="https://esim.fossee.in/downloads" target="_blank" class="inline-block bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-50 transition-colors duration-300">
+                            Download Now →
+                        </a>
+                    </div>
+
+                    <!-- Spoken Tutorials -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                                <span class="text-3xl">🎥</span>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Learn with Videos</h4>
+                        <p class="text-cyan-100 mb-4">Step-by-step video tutorials to master eSim quickly</p>
+                        <a href="http://spoken-tutorial.org/tutorial-search/?search_foss=eSim&search_language=English" target="_blank" class="inline-block bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-50 transition-colors duration-300">
+                            Watch Tutorials →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="text-3xl mr-3">📋</span>
+                        <h4 class="text-xl font-bold">Additional Resources</h4>
+                    </div>
+                    <p class="text-cyan-100 text-lg">
+                        Rest of the resources will be provided during the Marathon process. 
+                        Stay tuned for more materials and guidance!
+                    </p>
+                </div>
+            </div>
+        </div>
+
 </Layout>

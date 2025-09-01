@@ -1,0 +1,247 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<Layout>
+
+  <!-- Problem Statement Section -->
+  <div class="text-center mt-16 fade-in">
+    <h3 class="text-3xl  text-indigo-600 font-bold mb-4">Problem Statement</h3>
+    <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+
+    <div class="bg-gradient-to-r  from-indigo-400 to-blue-500 rounded-2xl p-8 text-white shadow-xl">
+        
+        <!-- Main Objective -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold">Marathon Objective</h4>
+            </div>
+            <p class="text-indigo-100 text-lg leading-relaxed">
+                The objective of the eSim Marathon is to <strong>design and simulate functional electronic circuits</strong> 
+                using the eSim tool and the <strong>IHP SG13G2 open-source PDK</strong>. Participants must choose one domain—
+                <span class="text-yellow-300 font-semibold">analog, digital, or mixed-signal</span>—and create a 
+                schematic-level design that works reliably with simulation outputs.
+            </p>
+        </div>
+
+        <!-- Requirements -->
+        <div class="mb-8">
+            <h4 class="text-2xl font-bold mb-6">What You Need to Do</h4>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 bg-green-400 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white mb-2">Understand SG13G2 PDK</h5>
+                            <p class="text-indigo-100 text-sm">
+                                Learn and utilize the components provided in the SG13G2 PDK for your circuit design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white mb-2">Design Non-Trivial Circuit</h5>
+                            <p class="text-indigo-100 text-sm">
+                                Create a meaningful circuit using eSim's schematic interface that demonstrates your skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white mb-2">Perform Simulation</h5>
+                            <p class="text-indigo-100 text-sm">
+                                Run comprehensive simulations using Ngspice integrated within eSim to verify your design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">4</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white mb-2">Submit Complete Package</h5>
+                            <p class="text-indigo-100 text-sm">
+                                Provide all design files, simulation results, and a short technical report.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Example Circuits Section -->
+<div class="text-center mt-16 fade-in">
+    <div class="bg-white rounded-2xl p-8 shadow-xl">
+        <h3 class="text-3xl font-bold text-indigo-600 mb-4">Example Circuits</h3>
+        <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+
+        <p class="text-gray-800 text-lg mb-8 max-w-3xl mx-auto">
+            Get inspired by these example circuits for each domain. Choose one that matches your interests and skill level.
+        </p>
+        
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Analog Circuits -->
+            <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-6 border-2 border-green-200">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-bold text-green-800 mb-4">Analog Circuits</h4>
+                
+                <div class="space-y-4 text-left">
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">🔧</span>
+                            <h5 class="font-bold text-green-800">Operational Amplifier</h5>
+                        </div>
+                        <p class="text-green-700 text-sm">Design a two-stage OTA (Operational Transconductance Amplifier)</p>
+                    </div>
+
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">⚡</span>
+                            <h5 class="font-bold text-green-800">Bandgap Voltage Reference</h5>
+                        </div>
+                        <p class="text-green-700 text-sm">Implement a temperature-independent voltage reference circuit</p>
+                    </div>
+
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">📡</span>
+                            <h5 class="font-bold text-green-800">Analog Filter</h5>
+                        </div>
+                        <p class="text-green-700 text-sm">Create low-pass, high-pass, or band-pass filter circuits</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Circuits -->
+            <div class="bg-gradient-to-br from-blue-50 to-cyan-100 rounded-2xl p-6 border-2 border-blue-200">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-bold text-blue-800 mb-4">Digital Track</h4>
+                
+                <div class="space-y-4 text-left">
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">➕</span>
+                            <h5 class="font-bold text-blue-800">4-bit Ripple Carry Adder</h5>
+                        </div>
+                        <p class="text-blue-700 text-sm">Build arithmetic circuits or comparator logic systems</p>
+                    </div>
+
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">🚦</span>
+                            <h5 class="font-bold text-blue-800">Finite State Machines</h5>
+                        </div>
+                        <p class="text-blue-700 text-sm">Design FSMs like traffic light controllers or sequence detectors</p>
+                    </div>
+
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">🔢</span>
+                            <h5 class="font-bold text-blue-800">Decoder & ALU</h5>
+                        </div>
+                        <p class="text-blue-700 text-sm">Implement 3:8 decoder or simple arithmetic logic unit</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mixed-Signal Circuits -->
+            <div class="bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-6 border-2 border-purple-200">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h4 class="text-2xl font-bold text-purple-800 mb-4">Mixed-Signal Track</h4>
+                
+                <div class="space-y-4 text-left">
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">📊</span>
+                            <h5 class="font-bold text-purple-800">Sample-and-Hold Circuit</h5>
+                        </div>
+                        <p class="text-purple-700 text-sm">Implement circuits that capture and maintain analog signals</p>
+                    </div>
+
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">🔄</span>
+                            <h5 class="font-bold text-purple-800">3-bit SAR-ADC or DAC</h5>
+                        </div>
+                        <p class="text-purple-700 text-sm">Design analog-to-digital or digital-to-analog converters</p>
+                    </div>
+
+                    <div class="bg-white/60 rounded-lg p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="text-lg mr-2">⚙️</span>
+                            <h5 class="font-bold text-purple-800">Digital FSM + Analog Bias</h5>
+                        </div>
+                        <p class="text-purple-700 text-sm">Combine digital finite state machines with analog biasing stages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Tips -->
+        <div class="mt-8 bg-gradient-to-r from-amber-50 to-yellow-100 rounded-xl p-6 border-2 border-amber-200">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold text-amber-800">Pro Tips</h4>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 text-left">
+                <div>
+                    <p class="text-amber-800 text-sm mb-2">
+                        <strong>Start Simple:</strong> Begin with basic circuits and gradually add complexity
+                    </p>
+                </div>
+                <div>
+                    <p class="text-amber-800 text-sm mb-2">
+                        <strong>Test Thoroughly:</strong> Run multiple simulation scenarios to verify functionality
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</Layout>

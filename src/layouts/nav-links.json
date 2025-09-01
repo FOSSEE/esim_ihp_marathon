@@ -1,0 +1,12 @@
+[
+
+  { "label": "About", "href": "/#about" },
+{ "label": "Probelm Statement", "href": "/problemstatement"},
+{ "label": "Timeline", "href": "/#timeline" },
+
+  { "label": "Resources", "href": "/resources" },
+  { "label": "Register", "href": "/register" },
+
+  { "label": "Partners", "href": "/#partners" },
+  { "label": "Contact", "href": "/#contact" }
+]

@@ -66,10 +66,5 @@
     font-style: normal;
   }
   
-  @layer base {
-    p, ul, li {
-      @apply text-xl text-gray-800 leading-relaxed;
-    }
-  }
   
  

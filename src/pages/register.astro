@@ -9,9 +9,9 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
     <div class="container mx-auto px-4 py-12 max-w-5xl">
       <!-- Main Header -->
       <div class="text-center mb-12 fade-in">
-        <h1 class="section-header text-5xl md:text-6xl font-bold mb-6">Register Now</h1>
+        <h1 class="section-header text-3xl md:text-3xl text-indigo-600 font-bold mb-6">Register Now</h1>
         <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
-        <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+        <p class="text-gray-800 text-xl max-w-3xl mx-auto leading-relaxed">
           Join the eSim & IHP Marathon - Open to participants from India and abroad
         </p>
       </div>
@@ -24,13 +24,13 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
               <span class="text-4xl">📝</span>
             </div>
           </div>
-          <h2 class="text-4xl font-bold mb-4">Registration Information</h2>
+          <h2 class="text-3xl font-bold mb-4">Registration Information</h2>
           <p class="text-green-100 text-lg max-w-2xl mx-auto mb-8">
             Interested people from <strong>India and abroad</strong> may register using our Google form
           </p>
 
           <a 
-          href="https://docs.google.com/forms/d/e/1FAIpQLScYKwSDwM6VkcZKAwGjZksGEJR7Ws7TAJJjj8ky6iSTCpWCnw/closedform" 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdm5Me47DZd8qZv7URnN9i92bDpyr8WBVyG0lzj-eL5H9dLnw/viewform" 
           target="_blank" 
           rel="noopener noreferrer"
           class="register-btn text-white px-12 py-4 rounded-2xl font-bold text-xl hover:scale-105 transition-all duration-300 inline-block"
@@ -47,9 +47,9 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
             <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
               <span class="text-3xl">🚫</span>
             </div>
-            <h3 class="text-3xl font-bold text-gray-800">No Restrictions</h3>
+            <h3 class="text-3xl font-bold text-blue-800">No Restrictions</h3>
           </div>
-          <p class="text-gray-700 text-xl leading-relaxed">
+          <p class="text-gray-800 text-xl leading-relaxed">
             There is <strong>no restriction or age limit</strong> of any kind in appearing for the Marathon.
           </p>
         </div>
@@ -58,8 +58,10 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
       <!-- Who Can Register Section -->
       <div class="fade-in">
         <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">Who Can Register?</h2>
-          <p class="text-gray-600 text-lg">The Marathon is open to everyone! Here are some examples:</p>
+          <h2 class="text-3xl font-bold text-blue-800 mb-4">Who Can Register?</h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+
+          <p class="text-gray-800 text-lg">The Marathon is open to everyone! Here are some examples:</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -76,7 +78,7 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
                 <span class="text-3xl">{icon}</span>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">{title}</h3>
-              <p class="text-gray-600 text-center leading-relaxed">{desc}</p>
+              <p class="text-gray-800 text-center leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
@@ -84,20 +86,22 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
 
       <!-- Additional Information -->
       <div class="mt-16 fade-in">
-        <div class="bg-gray-50 rounded-2xl p-8">
-          <h4 class="text-2xl font-bold text-gray-800 mb-6 text-center">Important Notes</h4>
+        <div class="bg-gray-50 rounded-2xl p-4">
+          <h4 class="text-3xl font-bold   text-indigo-600 mb-6 text-center">Important Notes</h4>
+          <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+
           <div class="grid md:grid-cols-2 gap-6">
             <div class="flex items-start"><span class="text-2xl mr-3 mt-1">✅</span>
-              <div><h5 class="font-bold text-gray-800 mb-2">Free Registration</h5><p class="text-gray-600">Registration is free</p></div>
+              <div><h5 class="font-bold text-gray-800 mb-2">Free Registration</h5><p class="text-gray-800">Registration is free</p></div>
             </div>
             <div class="flex items-start"><span class="text-2xl mr-3 mt-1">👤</span>
-              <div><h5 class="font-bold text-gray-800 mb-2">Individual Participation</h5><p class="text-gray-600">Open only to individuals</p></div>
+              <div><h5 class="font-bold text-gray-800 mb-2">Individual Participation</h5><p class="text-gray-800">Open only to individuals</p></div>
             </div>
             <div class="flex items-start"><span class="text-2xl mr-3 mt-1">⚡</span>
-              <div><h5 class="font-bold text-gray-800 mb-2">Basic Electronics Knowledge</h5><p class="text-gray-600">Should know basic electronics</p></div>
+              <div><h5 class="font-bold text-gray-800 mb-2">Basic Electronics Knowledge</h5><p class="text-gray-800">Should know basic electronics</p></div>
             </div>
             <div class="flex items-start"><span class="text-2xl mr-3 mt-1">🌐</span>
-              <div><h5 class="font-bold text-gray-800 mb-2">Global Participation</h5><p class="text-gray-600">Open to India & abroad</p></div>
+              <div><h5 class="font-bold text-gray-800 mb-2">Global Participation</h5><p class="text-gray-800">Open to India & abroad</p></div>
             </div>
           </div>
         </div>
@@ -105,7 +109,144 @@ const formLink = "https://forms.gle/your-google-form-link"; // replace with real
     </div>
   </div>
 
-  
+          <!-- Rules and Regulations Section -->
+          <div  class="text-center mt-16 fade-in">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">Rules and Regulations</h3>
+
+            <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+
+            <div class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-8 text-white shadow-xl">
+                
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <!-- Rule 1 - Official Software -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-2">Official Software Only</h4>
+                                <p class="text-red-100 text-sm leading-relaxed">
+                                    <strong>eSim and its associated software are the official software for this Marathon.</strong> 
+                                    Circuit design, simulation, and submission should be done using eSim ONLY. 
+                                    Submissions using any other software will be immediately disqualified.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rule 2 - Individual Participation -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-2">Individual Participation Only</h4>
+                                <p class="text-red-100 text-sm leading-relaxed">
+                                    This marathon is open <strong>ONLY to individual participation</strong>. 
+                                    We shall not accept team or group registration/submissions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rule 3 - No Malpractice -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-2">Zero Tolerance for Malpractice</h4>
+                                <p class="text-red-100 text-sm leading-relaxed">
+                                    Any participant found to be indulging in <strong>any form of malpractice will be immediately disqualified</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rule 4 - Final Decision -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-2">Final Decision Authority</h4>
+                                <p class="text-red-100 text-sm leading-relaxed">
+                                    The decision of the <strong>review committee and the organisers in declaring the results will be final</strong>. 
+                                    No queries in this regard will be entertained.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Licensing Requirements -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-6">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 2L3 7v11c0 5.55 3.84 7.74 9 9 5.16-1.26 9-3.45 9-9V7l-7-5z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold">Open Source Licensing Requirements</h4>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white/10 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-lg mr-2">📝</span>
+                                <h5 class="font-bold text-white">Source Code Requirements</h5>
+                            </div>
+                            <p class="text-red-100 text-sm">
+                                All source code/design leveraged by participants must have been released under an 
+                                <a href="https://opensource.org/licenses/category" target="_blank" class="text-black-600 hover:underline">
+                                  <strong>OSI-approved open-source licence</strong>.
+
+                                </a>.
+    
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white/10 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-lg mr-2">⚖️</span>
+                                <h5 class="font-bold text-white">Submission License</h5>
+                            </div>
+                            <p class="text-red-100 text-sm">
+                                All submitted work will be released under <strong>GPLv3 (GNU Public Licence)</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Important Notice -->
+                <div class="bg-yellow-500/20 border border-yellow-400/30 rounded-xl p-6">
+                    <div class="flex items-center justify-center mb-3">
+                        <svg class="w-8 h-8 text-yellow-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                        </svg>
+                        <h4 class="text-xl font-bold  text-yellow-300">Important Notice</h4>
+                    </div>
+                    <p class="text-yellow-100 text-center">
+                        Please read and understand all rules carefully before participating. 
+                        Violation of any rule will result in immediate disqualification without prior notice.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
 </Layout>
 
 <style>

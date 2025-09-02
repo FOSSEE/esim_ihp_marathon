@@ -1,0 +1,21 @@
+---
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+jobs:
+  build:
+    runs-on: esim-hackathon-2025
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
+      - name: Create folder
+        run: |
+          mkdir -p /home/github/esim-hackathon-2025/prod && cp -R dist /home/github/esim-hackathon-2025.fossee.in/prod

@@ -18,4 +18,4 @@ jobs:
         uses: withastro/action@v2
       - name: Create folder
         run: |
-          mkdir -p /home/github/esim-hackathon-2025/prod && cp -R dist /home/github/esim-hackathon-2025.fossee.in/prod
+                    mkdir -p /home/github/Assets/esim-hackathon-2025/prod && cp -R dist /home/github/Assets/esim-hackathon-2025/prod

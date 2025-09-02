@@ -1,5 +1,5 @@
 ---
-import spoken from "../images/spoken.jpeg";
+import spoken from "../images/spoken1.jpeg";
 import fossee from "../images/fossee.jpeg";
 
 import iitb from "../images/iitb.jpeg";
@@ -23,9 +23,9 @@ import timeline from "../images/timeline.png";
   <!-- <main class="bg-white flex justify-center font-[Montserrat] min-h-screen py-12 px-6"> -->
     <!-- <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-10"> -->
       <!-- Title -->
-      <h1 class="text-3xl font-bold text-center text-indigo-600 mb-4">
+      <!-- <h1 class="text-3xl font-bold text-center text-indigo-600 mb-4">
         Design, Simulate, Showcase - <br />Unlock Open-Source VLSI Design using eSim + IHP SG13G2 PDK!!!
-      </h1>
+      </h1> -->
       <br /><br />
  
       <main>  <h2 id="about" class="text-3xl font-bold text-indigo-600 mb-4 flex justify-center">Background and Motivation</h2>
@@ -176,6 +176,21 @@ import timeline from "../images/timeline.png";
                         Seamlessly switch to commercial software when needed, ensuring flexibility in your workflow.
                     </p>
                 </div>
+
+                <div class="benefit-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl md:col-span-2 lg:col-span-1">
+                  <div class="icon-container w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto bg-indigo-100">
+                    <span class="text-3xl">🌐</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Learn More</h3>
+                  <p class="text-gray-800 text-center leading-relaxed">
+                    To know more about eSim, visit the 
+                    <a href="https://esim.fossee.in/" target="_blank" class="text-blue-600  hover:underline">
+                      eSim Website
+                    </a>.
+                  </p>
+                </div>
+              </div>
+</div>
             </div>
         </div>
         <!-- IHP Section -->
@@ -217,7 +232,39 @@ import timeline from "../images/timeline.png";
                          the first industrial-grade PDK available freely to academia, enthusiasts, and researchers worldwide.
                      </p>
                  </div>
-             </div>
+                 <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                      <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl">🔗</span>
+                      </div>
+                      <h3 class="text-2xl font-bold">Know More</h3>
+                    </div>
+                    <div class="text-black-700 leading-relaxed space-y-2">
+                      <p>
+                        <strong>PDK to be used:</strong>
+                        <a href="https://github.com/IHP-GmbH/IHP-Open-PDK" 
+                           target="_blank" 
+                           class="text-indigo-600 font-semibold hover:underline">
+                           IHP OpenPDK
+                        </a>
+                      </p>
+                    
+                      <p>
+                        <strong>Technology to be used:</strong>
+                        <a href="https://ihp-open-pdk-docu.readthedocs.io/en/latest/install.html" 
+                           target="_blank" 
+                           class="text-indigo-600 font-semibold hover:underline">
+                           IHP 130nm SG13G2 BiCMOS
+                        </a>
+                      </p>
+                    </div>
+                      
+                     </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
              <!-- Visual Element -->
              <!-- <div class="text-center">
@@ -254,7 +301,7 @@ import timeline from "../images/timeline.png";
         <!-- </div> -->
       <!-- </main> --> 
              
-   <div id="timeline" class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-8">
+   <div id="timeline" class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-8">
      <h2 class="text-3xl font-bold text-center text-indigo-600 mb-4">
     Timeline
      </h2>
@@ -319,7 +366,7 @@ import timeline from "../images/timeline.png";
 <div class="">
 <h4 class="text-3xl text-center font-bold text-indigo-600 mb-4">Guidelines</h4>
 <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
-
+<br /><br />
 <div class="grid md:grid-cols-2 gap-6 mb-8">
 <div class="bg-blue-50 rounded-xl p-6">
    <div class="flex items-start mb-3">
@@ -352,7 +399,7 @@ import timeline from "../images/timeline.png";
 <!-- Benefits Section -->
 <h3 class="text-3xl text-center font-bold text-indigo-600 mb-4">Benefits</h3>
 <div class="w-25 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
-
+<br />
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 <div class="bg-purple-50 rounded-xl p-4 text-center">
    <div class="text-3xl mb-2">🏆</div>
@@ -515,8 +562,8 @@ import timeline from "../images/timeline.png";
 
 <!-- IHP -->
 <div class="flex flex-col items-center">
- <div class="w-24 h-24 flex items-center justify-center bg-purple-100 rounded-lg mb-4 shadow-md">
-    <img src={ihp.src} alt="Spoken Tutorial" class="w-30 h-30 "  />
+ <div class="w-30 h-18 flex items-center justify-center bg-purple-100 rounded-lg mb-4 shadow-md">
+    <img src={ihp.src} alt="Spoken Tutorial" class="w-30 h-25 "  />
 </div>
  <h4 class="text-xl font-bold text-gray-800">IHP</h4>
  <p class="text-gray-800 text-sm text-center">Innovations for High Performance Microelectronics</p>
@@ -524,8 +571,11 @@ import timeline from "../images/timeline.png";
 
 <!-- Spoken Tutorial -->
 <div class="flex flex-col items-center">
+    <div class="w-30 h-18 flex items-center justify-center bg-purple-100 rounded-lg mb-4 shadow-md">
+
  <img src={spoken.src} alt="Spoken Tutorial" />
- <h4 class="text-xl font-bold text-gray-800"></h4>
+ </div>
+ <h4 class="text-xl font-bold text-gray-800">Spoken Tutorial</h4>
  <p class="text-gray-800 text-sm text-center">Audio-Video Learning Platform</p>
 </div>
 </div>

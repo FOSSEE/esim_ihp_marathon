@@ -3,22 +3,21 @@ import spoken from "../images/spoken1.jpeg";
 import fossee from "../images/fossee.jpeg";
 
 import iitb from "../images/iitb.jpeg";
-import esim from "../images/webtop.png";
+import esim from "../images/webtop-01(1).png";
 import ihp from "../images/ihp_logo.png";
-import timeline from "../images/timeline.png";
+import timeline from "../images/timeline-04(1).png";
 ---
           <!-- eSim Image Section -->
-          <section class="flex justify-center bg-white pt-20">
+          <section class="flex justify-center   bg-white pt-10 ">
             <a href="/register" target="_blank">
               <img 
                 src={esim.src} 
                 alt="eSim" 
                 decoding="async" 
-                class=" lg:max-w-[1600px]  h-auto mx-auto rounded-md shadow-md"
+                class="lg:max-w-[1800px] h-auto mx-auto rounded-md shadow-md"
               />
             </a>
           </section>       
-          <br /><br />                     
         
   <!-- <main class="bg-white flex justify-center font-[Montserrat] min-h-screen py-12 px-6"> -->
     <!-- <div class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-10"> -->
@@ -28,7 +27,7 @@ import timeline from "../images/timeline.png";
       </h1> -->
       <br /><br />
  
-      <main>  <h2 id="about" class="text-3xl font-bold text-indigo-600 mb-4 flex justify-center">Background and Motivation</h2>
+      <main>  <h2 id="about" class="text-3xl font-bold text-indigo-600 mb-4 flex justify-center ">Background and Motivation</h2>
         <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
 
         <p class="text-gray-800 mb-4">
@@ -228,7 +227,7 @@ import timeline from "../images/timeline.png";
                          <h3 class="text-2xl font-bold">Historic Open Source Release</h3>
                      </div>
                      <p class="text-black-400 leading-relaxed">
-                         In a landmark move, IHP released the <strong class="text-yellow-300">SG13G2 PDK</strong> as open-source—
+                         In a landmark move, IHP released the <strong class="text-indigo-600">SG13G2 PDK</strong> as open-source—
                          the first industrial-grade PDK available freely to academia, enthusiasts, and researchers worldwide.
                      </p>
                  </div>
@@ -291,24 +290,23 @@ import timeline from "../images/timeline.png";
      <main class="min-h-screen bg-[#ffff] py-12 px-6">
         <!-- <h2 id="timeline" class="text-3xl font-bold text-center text-indigo-600 mb-4">
           Timeline
-        </h2>
-      
-        <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-"></div>
-      
-        <div class="flex flex-col items-center">
-          <img src={timeline.src} alt="Timeline" class="mt-12" />
-          <p class="text-gray-800 text-sm text-center">Audio-Video Learning Platform</p> -->
-        <!-- </div> -->
-      <!-- </main> --> 
-             
-   <div id="timeline" class="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-8">
-     <h2 class="text-3xl font-bold text-center text-indigo-600 mb-4">
+        </h2> -->
+      <div id="timeline" class="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-4">
+     <h2 class="text-3xl font-bold text-center text-indigo-600 mb-2">
     Timeline
      </h2>
      <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-4"></div>
-<br /><br />
+<br />
 
-     <div class="overflow-x-auto">
+      
+        <div class="flex flex-col items-center">
+          <img src={timeline.src} alt="Timeline" class="mt-12" />
+          <!-- <p class="text-gray-800 text-sm text-center">Audio-Video Learning Platform</p>  -->
+        <!-- </div> -->
+      <!-- </main> --> 
+             
+   
+     <!-- <div class="overflow-x-auto">
        <table class="w-full max-auto border-collapse border border-gray-300 text-sm md:text-base">
          <thead class="bg-blue-400 text-white bg-[#C9C0BB]">
            <tr>
@@ -357,10 +355,10 @@ import timeline from "../images/timeline.png";
            </tr>
          </tbody>
        </table>
-     </div>
+     </div> -->
    </div>
  </main>
-
+<br />
  <main>
 <!-- Guidelines Section -->
 <div class="">
@@ -541,45 +539,48 @@ import timeline from "../images/timeline.png";
 
 <!-- Partners and Organisers Section -->
 <div id="partners" class="text-center mt-16 fade-in">
-<!-- <div class="bg-white rounded-2xl p-8 shadow-xl"> -->
-<h3 class="text-3xl font-bold text-indigo-600 mb-4">Partners and Organisers</h3>
-<div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+  <h3 class="text-3xl font-bold text-indigo-600 mb-4">Partners and Organisers</h3>
+  <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- IITB -->
-<div class="flex flex-col items-center">
- <img src={iitb.src} alt="IIT Bombay"  />
- <h4 class="text-xl font-bold text-gray-800">IITB</h4>
- <p class="text-gray-800 text-sm text-center">Indian Institute of Technology Bombay</p>
-</div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<!-- FOSSEE -->
-<div class="flex flex-col items-center">
- <img src={fossee.src} alt="FOSSEE" />
- <h4 class="text-xl font-bold text-gray-800">FOSSEE</h4>
- <p class="text-gray-800 text-sm text-center">Free and Open Source Software for Education</p>
-</div>
+    <!-- IITB -->
+    <a href="https://www.iitb.ac.in/" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
+      <div class="w-40 h-18 flex items-center justify-center mb-4 shadow-md">
+        <img src={iitb.src} alt="IIT Bombay"  class="w-40 h-25" />
+      </div>
+      <h4 class="text-xl font-bold text-gray-800">IITB</h4>
+      <p class="text-gray-800 text-sm text-center">Indian Institute of Technology Bombay</p>
+    </a>
 
-<!-- IHP -->
-<div class="flex flex-col items-center">
- <div class="w-30 h-18 flex items-center justify-center bg-purple-100 rounded-lg mb-4 shadow-md">
-    <img src={ihp.src} alt="Spoken Tutorial" class="w-30 h-25 "  />
-</div>
- <h4 class="text-xl font-bold text-gray-800">IHP</h4>
- <p class="text-gray-800 text-sm text-center">Innovations for High Performance Microelectronics</p>
-</div>
+    <!-- FOSSEE -->
+    <a href="https://fossee.in/" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
+      <div class="w-40 h-18 flex items-center justify-center  mb-4 shadow-md">
+        <img src={fossee.src} alt="FOSSEE" />
+      </div>
+      <h4 class="text-xl font-bold text-gray-800">FOSSEE</h4>
+      <p class="text-gray-800 text-sm text-center">Free and Open Source Software for Education</p>
+    </a>
 
-<!-- Spoken Tutorial -->
-<div class="flex flex-col items-center">
-    <div class="w-30 h-18 flex items-center justify-center bg-purple-100 rounded-lg mb-4 shadow-md">
+    <!-- IHP -->
+    <a href="https://www.ihp-microelectronics.com/" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
+      <div class="w-30 h-18 flex items-center justify-center  mb-4 shadow-md">
+        <img src={ihp.src} alt="IHP" class="w-30 h-25" />
+      </div>
+      <h4 class="text-xl font-bold text-gray-800">IHP</h4>
+      <p class="text-gray-800 text-sm text-center">Innovations for High Performance Microelectronics</p>
+    </a>
 
- <img src={spoken.src} alt="Spoken Tutorial" />
- </div>
- <h4 class="text-xl font-bold text-gray-800">Spoken Tutorial</h4>
- <p class="text-gray-800 text-sm text-center">Audio-Video Learning Platform</p>
-</div>
-</div>
-</div>
+    <!-- Spoken Tutorial -->
+    <a href="https://spoken-tutorial.org/" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
+      <div class="w-30 h-18 flex items-center justify-center  mb-4 shadow-md">
+        <img src={spoken.src} alt="Spoken Tutorial" />
+      </div>
+      <h4 class="text-xl font-bold text-gray-800">Spoken Tutorial</h4>
+      <p class="text-gray-800 text-sm text-center">Audio-Video Learning Platform</p>
+    </a>
+
+  </div>
 </div>
 
           <!-- Contact Us Section -->

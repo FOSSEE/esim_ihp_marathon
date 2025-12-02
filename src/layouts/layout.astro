@@ -60,6 +60,29 @@ import "../styles/global.css";
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
+            /* Highlight Award & Result without affecting layout */
+ul.menu li a.result {
+  color: red !important;
+  font-weight: bold !important;
+}
+
+ul.menu li a.result:hover {
+  color: red !important;
+}
+
+
+/* Minimal override — only changes color for Award & Result, no layout changes */
+/* Highlight Awards & Results Only */
+.nav-link.result {
+  color: red !important;
+  font-weight: 600 !important;
+}
+
+.nav-link.esult:hover,
+.nav-link.result.active {
+  color: red !important;
+}
+
         </style>
     
   </head>
@@ -81,17 +104,21 @@ import "../styles/global.css";
           
   
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center gap-10">
+        <ul class="hidden md:flex items-center gap-5">
           <li><a href="/#about" class="text-white text-xl font-bold  tracking-wide transition hover:text-yellow-300">About</a></li>
           <li><a href="/#timeline" class="text-white text-xl font-bold  tracking-wide transition hover:text-yellow-300">Timeline</a></li>
 
           <li><a href="/problemstatement" class="text-white text-xl font-bold  tracking-wide transition hover:text-yellow-300">Problem Statement</a></li>
           <li><a href="/resources" class="text-white font-bold   text-xl tracking-wide transition hover:text-yellow-300">Resources</a></li>
 
-          <li><a href="/register" class="text-white font-bold text-xl  tracking-wide transition hover:text-yellow-300">Register</a></li>
+          <!-- <li><a href="/register" class="text-white font-bold text-xl  tracking-wide transition hover:text-yellow-300">Register</a></li> -->
           <!-- <li><a href="/#register" class="text-white font-semibold  tracking-wide transition hover:text-yellow-300">Rules</a></li> -->
-
-                    <li><a href="/webinar" class="text-white font-bold text-xl  tracking-wide transition hover:text-yellow-300">Webinar</a></li>
+<li>
+  <a href="/results" class="nav-link result text-white font-bold text-xl tracking-wide">
+    Results
+  </a>
+</li>
+         <li><a href="/webinar" class="text-white font-bold text-xl  tracking-wide transition hover:text-yellow-300">Webinar</a></li>
 
           <li><a href="/#partners" class="text-white font-bold  text-xl tracking-wide transition hover:text-yellow-300">Partners</a></li>
           <li><a href="/#contact" class="text-white font-bold text-xl tracking-wide transition hover:text-yellow-300">Contact</a></li>
@@ -108,26 +135,19 @@ import "../styles/global.css";
         <a href="/resources" class="block text-white hover:text-yellow-300">Resources</a>
         <a href="/register" class="block text-white hover:text-yellow-300">Register</a>
                 <a href="/webinar" class="block text-white hover:text-yellow-300">Webinar</a>
+                <a href="/results" class="block text-white hover:text-yellow-300">Results</a>
 
         <a href="/#partners" class="block text-white hover:text-yellow-300">Partner</a>
         <a href="/#contact" class="block text-white hover:text-yellow-300">Contact</a>
       </div>
     </nav>
-  
-    <!-- ✅ Hero Section -->
-    <!-- <section class="flex justify-center bg-white pt-20">
-      <a href="https://esim.fossee.in/" target="_blank">
-        <img 
-          src={esim.src} 
-          alt="eSim" 
-          decoding="async" 
-          class="w-full max-w-[1600px] h-auto mx-auto rounded-md shadow-md"
-        />
-      </a>
-    </section>
-   -->
-    <!-- Simple Script for toggle -->
-    <script>
+  <li>
+  <a href="/results" class="text-white font-bold text-xl tracking-wide nav-link result">
+    Results
+  </a>
+</li>
+
+     <script>
       const btn = document.getElementById('menu-btn');
       const menu = document.getElementById('mobile-menu');
       btn.addEventListener('click', () => {
@@ -135,21 +155,7 @@ import "../styles/global.css";
       });
     </script>
   </body>
-    <!-- ✅ Spacer so content doesn’t hide under fixed nav -->
-    <!-- <div class="pt-16"></div> -->
-
-       <!-- ✅ Hero Section -->
-  <!-- <section class="flex justify-center bg-white pt-20">
-    <a href="https://esim.fossee.in/" target="_blank">
-      <img 
-        src={esim.src} 
-        alt="eSim" 
-        decoding="async" 
-        class="w-full max-w-[2000px] h-auto mx-auto rounded-md shadow-md"
-      />
-    </a>
-  </section>                             -->
-
+   
     
     <main class="max-w-6xl mx-auto px-4 py-8">
       <slot />
@@ -221,6 +227,7 @@ import "../styles/global.css";
   </div>
 </div>        
 </main>
+
 
       
         <script>
